@@ -62,10 +62,10 @@ public class AssetsController : BaseController
     }
 
     /// <summary>
-    /// Gets an applicant by theit full name with assets.
+    /// Gets an applicant by their full name with assets.
     /// </summary>
     /// <param name="parameters">Contains necessary information for the search.</param>
-    /// <returns>A list of all available assets.</returns>
+    /// <returns>An applicant with corresponding full name.</returns>
     [HttpGet("some/")]
     public async Task<ActionResult> GetApplicantByFullName([FromQuery] FullNameParams parameters)
     {
