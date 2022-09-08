@@ -1,4 +1,4 @@
-namespace ApplicantAssets.Api.Configuration;
+namespace ApplicantAssets.Domain.Configuration;
 
 /// <summary>
 /// A mongo db configuration class.

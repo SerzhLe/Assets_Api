@@ -1,11 +1,11 @@
 namespace ApplicantAssets.Api.Extensions;
 
 using System.Text;
-using ApplicantAssets.Api.Configuration;
 using ApplicantAssets.Api.Middleware;
 using ApplicantAssets.Api.Services;
 using ApplicantAssets.DataAccess.Storage.EntityStorages;
 using ApplicantAssets.DataAccess.Storage.StorageInterfaces;
+using ApplicantAssets.Domain.Configuration;
 using ApplicantAssets.Domain.Models;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;

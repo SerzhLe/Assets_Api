@@ -26,11 +26,11 @@ public class AssetsController : BaseController
     }
 
     /// <summary>
-    /// Gets all assets.
+    /// Gets all applicants including assets.
     /// </summary>
     /// <returns>A list of all available assets.</returns>
     [HttpGet("all")]
-    public async Task<ActionResult> GetAssets()
+    public async Task<ActionResult> GetApplicants()
     {
         this.logger.LogInformation("Getting all existing applicants..");
 
@@ -38,13 +38,18 @@ public class AssetsController : BaseController
     }
 
     /// <summary>
-    /// Gets all assets filtered by a date and/or a country of birth.
+    /// Gets all applicants filtered by a date and a country of birth including assets.
     /// </summary>
     /// <param name="parameters">Contains necessary information for the search.</param>
     /// <returns>A list of all available assets.</returns>
     [HttpGet("some/")]
-    public async Task<ActionResult> GetAssetsByDateAndCountry([FromQuery] DateAndCountryParams parameters)
+    public async Task<ActionResult> GetApplicantsByDateAndCountry([FromQuery] DateAndCountryParams parameters)
     {
+        if (parameters is null)
+        {
+            return this.BadRequest("Query parameters are not specified");
+        }
+
         this.logger.LogInformation(
             "Getting all existing applicants filtered by date: {Date} and country: {Country}...",
             parameters.Date,
@@ -54,5 +59,33 @@ public class AssetsController : BaseController
             parameters.OlderThan,
             parameters.Date,
             parameters.Country));
+    }
+
+    /// <summary>
+    /// Gets an applicant by theit full name with assets.
+    /// </summary>
+    /// <param name="parameters">Contains necessary information for the search.</param>
+    /// <returns>A list of all available assets.</returns>
+    [HttpGet("some/")]
+    public async Task<ActionResult> GetApplicantByFullName([FromQuery] FullNameParams parameters)
+    {
+        if (parameters is null)
+        {
+            return this.BadRequest("Query parameters are not specified");
+        }
+
+        if (string.IsNullOrWhiteSpace(parameters.FirstName) || string.IsNullOrWhiteSpace(parameters.LastName))
+        {
+            return this.BadRequest("First name and/or last name cannot be empty.");
+        }
+
+        this.logger.LogInformation(
+            "Getting an applicant by their full name: {FirstName}, {LastName}",
+            parameters.FirstName,
+            parameters.LastName);
+
+        return this.Ok(await this.storage.GetByFullName(
+            parameters.FirstName,
+            parameters.LastName));
     }
 }

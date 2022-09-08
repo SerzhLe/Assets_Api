@@ -46,4 +46,16 @@ public class ApplicantMongoDbStorage : BaseMongoDbStorage<ApplicantModel, Guid>,
 
         return await (await this.Collection.FindAsync(filter, findOptions)).ToListAsync();
     }
+
+    /// <inheritdoc/>
+    public async Task<ApplicantModel> GetByFullName(string firstName, string lastName)
+    {
+        var filter = Builders<ApplicantModel>.Filter.Where(ap
+            => string.Equals(ap.FirstName, firstName, StringComparison.OrdinalIgnoreCase)
+            && string.Equals(ap.LastName, lastName, StringComparison.OrdinalIgnoreCase));
+
+        var result = await this.Collection.FindAsync(filter);
+
+        return await result.FirstAsync();
+    }
 }
