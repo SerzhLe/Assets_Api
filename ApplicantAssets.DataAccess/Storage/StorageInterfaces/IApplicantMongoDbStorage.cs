@@ -13,7 +13,7 @@ public interface IApplicantMongoDbStorage : IBaseDbStorage<ApplicantModel, Guid>
     /// <param name="firstName">Applicant's given name.</param>
     /// <param name="lastName">Applicant's surname.</param>
     /// <returns>An applicant with corresponding full name.</returns>
-    Task<ApplicantModel> GetByFullName(string firstName, string lastName);
+    Task<ApplicantModel?> GetByFullName(string firstName, string lastName);
 
     /// <summary>
     /// Gets the applicant based on the condition.

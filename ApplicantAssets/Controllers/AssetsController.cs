@@ -42,7 +42,7 @@ public class AssetsController : BaseController
     /// </summary>
     /// <param name="parameters">Contains necessary information for the search.</param>
     /// <returns>A list of all available assets.</returns>
-    [HttpGet("some/")]
+    [HttpGet("dateandcountry")]
     public async Task<ActionResult> GetApplicantsByDateAndCountry([FromQuery] DateAndCountryParams parameters)
     {
         if (parameters is null)
@@ -55,10 +55,17 @@ public class AssetsController : BaseController
             parameters.Date,
             parameters.Country);
 
-        return this.Ok(await this.storage.GetByDateAndCountryAsync(
+        var result = await this.storage.GetByDateAndCountryAsync(
             parameters.OlderThan,
             parameters.Date,
-            parameters.Country));
+            parameters.Country);
+
+        if (!result.Any())
+        {
+            return this.NotFound("There are no applicants match the specified condition.");
+        }
+
+        return this.Ok(result);
     }
 
     /// <summary>
@@ -66,7 +73,7 @@ public class AssetsController : BaseController
     /// </summary>
     /// <param name="parameters">Contains necessary information for the search.</param>
     /// <returns>An applicant with corresponding full name.</returns>
-    [HttpGet("some/")]
+    [HttpGet("fullname")]
     public async Task<ActionResult> GetApplicantByFullName([FromQuery] FullNameParams parameters)
     {
         if (parameters is null)
@@ -84,8 +91,13 @@ public class AssetsController : BaseController
             parameters.FirstName,
             parameters.LastName);
 
-        return this.Ok(await this.storage.GetByFullName(
-            parameters.FirstName,
-            parameters.LastName));
+        var result = await this.storage.GetByFullName(parameters.FirstName, parameters.LastName);
+
+        if (result is null)
+        {
+            return this.NotFound("There is no applicant with the specified full name.");
+        }
+
+        return this.Ok(result);
     }
 }

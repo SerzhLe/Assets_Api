@@ -48,14 +48,15 @@ public class ApplicantMongoDbStorage : BaseMongoDbStorage<ApplicantModel, Guid>,
     }
 
     /// <inheritdoc/>
-    public async Task<ApplicantModel> GetByFullName(string firstName, string lastName)
+    public async Task<ApplicantModel?> GetByFullName(string firstName, string lastName)
     {
-        var filter = Builders<ApplicantModel>.Filter.Where(ap
-            => string.Equals(ap.FirstName, firstName, StringComparison.OrdinalIgnoreCase)
-            && string.Equals(ap.LastName, lastName, StringComparison.OrdinalIgnoreCase));
+        var filter1 = Builders<ApplicantModel>.Filter.Eq(applicant => applicant.FirstName, firstName);
+        var filter2 = Builders<ApplicantModel>.Filter.Eq(applicant => applicant.LastName, lastName);
 
-        var result = await this.Collection.FindAsync(filter);
+        var fullFilter = Builders<ApplicantModel>.Filter.And(filter1, filter2);
 
-        return await result.FirstAsync();
+        var result = await this.Collection.FindAsync(fullFilter);
+
+        return await result.FirstOrDefaultAsync();
     }
 }
