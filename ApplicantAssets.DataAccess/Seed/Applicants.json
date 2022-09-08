@@ -1,0 +1,318 @@
+[
+  {
+    "firstName": "Soto",
+    "lastName": "Rivers",
+    "dateOfBirth": "1998-02-18",
+    "countryOfBirth": "Korea (North)",
+    "cars": [],
+    "houses": [
+      {
+        "address": "30 Livonia Avenue, Vowinckel, Palau",
+        "price": 46880,
+        "constructionYear": "1945-01-19T08:13:46.227Z",
+        "roomsNumber": 1
+      },
+      {
+        "address": "17 Dekoven Court, Reinerton, Pakistan",
+        "price": 49238,
+        "constructionYear": "1975-04-20T02:35:34.309Z",
+        "roomsNumber": 1
+      }
+    ]
+  },
+  {
+    "firstName": "Lola",
+    "lastName": "Walker",
+    "dateOfBirth": "1992-02-04",
+    "countryOfBirth": "Peru",
+    "cars": [
+      {
+        "brand": "Toyota",
+        "model": "Note",
+        "price": 35264,
+        "manufactureYear": "2018-02-11T12:02:36.870Z"
+      }
+    ],
+    "houses": []
+  },
+  {
+    "firstName": "Mattie",
+    "lastName": "Mckay",
+    "dateOfBirth": "1989-04-13",
+    "countryOfBirth": "Gibraltar",
+    "cars": [
+      {
+        "brand": "Toyota",
+        "model": "Prius",
+        "price": 23580,
+        "manufactureYear": "1999-07-31T17:02:34.387Z"
+      },
+      {
+        "brand": "Nissan",
+        "model": "Qashqai",
+        "price": 22779,
+        "manufactureYear": "2016-04-09T02:35:51.911Z"
+      },
+      {
+        "brand": "Nissan",
+        "model": "Fabia",
+        "price": 38336,
+        "manufactureYear": "2015-07-23T00:04:34.256Z"
+      }
+    ],
+    "houses": [
+      {
+        "address": "88 Moffat Street, Vernon, Sudan",
+        "price": 19449,
+        "constructionYear": "1959-11-04T11:52:42.710Z",
+        "roomsNumber": 2
+      },
+      {
+        "address": "53 Albemarle Road, Belmont, Italy",
+        "price": 44363,
+        "constructionYear": "1995-02-18T04:07:49.322Z",
+        "roomsNumber": 6
+      }
+    ]
+  },
+  {
+    "firstName": "Hyde",
+    "lastName": "Sanders",
+    "dateOfBirth": "1985-04-13",
+    "countryOfBirth": "Azerbaijan",
+    "cars": [
+      {
+        "brand": "BMW",
+        "model": "Superb",
+        "price": 38577,
+        "manufactureYear": "2005-03-26T00:24:47.486Z"
+      }
+    ],
+    "houses": []
+  },
+  {
+    "firstName": "Hays",
+    "lastName": "Marshall",
+    "dateOfBirth": "1992-03-11",
+    "countryOfBirth": "Qatar",
+    "cars": [
+      {
+        "brand": "Toyota",
+        "model": "Rapid",
+        "price": 33154,
+        "manufactureYear": "2001-08-13T20:15:59.373Z"
+      },
+      {
+        "brand": "Skoda",
+        "model": "RAV4",
+        "price": 5217,
+        "manufactureYear": "2013-06-14T22:29:12.121Z"
+      },
+      {
+        "brand": "Skoda",
+        "model": "Prius",
+        "price": 30839,
+        "manufactureYear": "2003-01-04T13:30:40.906Z"
+      },
+      {
+        "brand": "Nissan",
+        "model": "Land Cruiser Prado",
+        "price": 12328,
+        "manufactureYear": "2017-12-12T22:12:09.177Z"
+      },
+      {
+        "brand": "BMW",
+        "model": "Qashqai",
+        "price": 34441,
+        "manufactureYear": "2014-03-13T00:28:42.817Z"
+      }
+    ],
+    "houses": [
+      {
+        "address": "43 Mill Road, Bawcomville, France",
+        "price": 80886,
+        "constructionYear": "1956-11-15T17:58:16.575Z",
+        "roomsNumber": 1
+      },
+      {
+        "address": "1 Amity Street, Rutherford, Malaysia",
+        "price": 61196,
+        "constructionYear": "2002-07-28T04:14:23.938Z",
+        "roomsNumber": 1
+      },
+      {
+        "address": "43 Pooles Lane, Jenkinsville, Sierra Leone",
+        "price": 36630,
+        "constructionYear": "1974-12-23T01:55:30.384Z",
+        "roomsNumber": 9
+      }
+    ]
+  },
+  {
+    "firstName": "Grimes",
+    "lastName": "Allen",
+    "dateOfBirth": "1986-11-10",
+    "countryOfBirth": "Northern Mariana Islands",
+    "cars": [
+      {
+        "brand": "Skoda",
+        "model": "RAV4",
+        "price": 6550,
+        "manufactureYear": "2015-02-16T09:05:55.560Z"
+      },
+      {
+        "brand": "Skoda",
+        "model": "Prius",
+        "price": 15991,
+        "manufactureYear": "2018-09-29T02:33:55.873Z"
+      },
+      {
+        "brand": "Nissan",
+        "model": "X6",
+        "price": 13572,
+        "manufactureYear": "2016-08-21T10:44:09.477Z"
+      },
+      {
+        "brand": "Toyota",
+        "model": "Fabia",
+        "price": 30582,
+        "manufactureYear": "2015-03-11T20:03:08.623Z"
+      }
+    ],
+    "houses": [
+      {
+        "address": "49 Bliss Terrace, Tilleda, Ukraine",
+        "price": 57045,
+        "constructionYear": "1982-06-24T07:11:38.501Z",
+        "roomsNumber": 8
+      },
+      {
+        "address": "82 Bijou Avenue, Maxville, Philippines",
+        "price": 71133,
+        "constructionYear": "1912-03-06T15:00:18.528Z",
+        "roomsNumber": 9
+      },
+      {
+        "address": "58 Everit Street, Gratton, American Samoa",
+        "price": 11118,
+        "constructionYear": "1957-09-03T22:18:52.427Z",
+        "roomsNumber": 1
+      }
+    ]
+  },
+  {
+    "firstName": "Spears",
+    "lastName": "Warren",
+    "dateOfBirth": "1984-05-07",
+    "countryOfBirth": "Haiti",
+    "cars": [],
+    "houses": []
+  },
+  {
+    "firstName": "Kelly",
+    "lastName": "Farrell",
+    "dateOfBirth": "1996-11-13",
+    "countryOfBirth": "Estonia",
+    "cars": [
+      {
+        "brand": "BMW",
+        "model": "Fabia",
+        "price": 27298,
+        "manufactureYear": "2018-05-30T01:11:59.568Z"
+      },
+      {
+        "brand": "Nissan",
+        "model": "520",
+        "price": 12397,
+        "manufactureYear": "2002-04-28T19:10:32.213Z"
+      },
+      {
+        "brand": "Skoda",
+        "model": "Prius",
+        "price": 29089,
+        "manufactureYear": "2004-03-29T17:17:04.076Z"
+      },
+      {
+        "brand": "Skoda",
+        "model": "Qashqai",
+        "price": 19415,
+        "manufactureYear": "2000-05-15T04:38:57.707Z"
+      }
+    ],
+    "houses": [
+      {
+        "address": "73 Brightwater Avenue, Cornucopia, Canada",
+        "price": 38436,
+        "constructionYear": "1947-08-18T17:13:53.729Z",
+        "roomsNumber": 2
+      }
+    ]
+  },
+  {
+    "firstName": "Frieda",
+    "lastName": "Moses",
+    "dateOfBirth": "1990-11-02",
+    "countryOfBirth": "Albania",
+    "cars": [],
+    "houses": [
+      {
+        "address": "99 Stuart Street, Steinhatchee, Mauritania",
+        "price": 85782,
+        "constructionYear": "1949-08-29T19:30:12.304Z",
+        "roomsNumber": 9
+      },
+      {
+        "address": "100 Wythe Place, Downsville, Guinea-Bissau",
+        "price": 66440,
+        "constructionYear": "1968-12-20T07:41:59.632Z",
+        "roomsNumber": 4
+      },
+      {
+        "address": "54 Vandervoort Place, Loveland, Marshall Islands",
+        "price": 86910,
+        "constructionYear": "1994-09-17T09:48:16.414Z",
+        "roomsNumber": 1
+      }
+    ]
+  },
+  {
+    "firstName": "Nichols",
+    "lastName": "Dillon",
+    "dateOfBirth": "1989-06-17",
+    "countryOfBirth": "Lebanon",
+    "cars": [
+      {
+        "brand": "Toyota",
+        "model": "Qashqai",
+        "price": 31828,
+        "manufactureYear": "2007-07-28T07:34:44.624Z"
+      },
+      {
+        "brand": "BMW",
+        "model": "520",
+        "price": 31284,
+        "manufactureYear": "2008-12-27T15:01:11.339Z"
+      },
+      {
+        "brand": "Toyota",
+        "model": "RAV4",
+        "price": 38842,
+        "manufactureYear": "2010-05-18T11:11:48.682Z"
+      }
+    ],
+    "houses": [
+      {
+        "address": "99 Noble Street, Lopezo, Switzerland",
+        "price": 28796,
+        "constructionYear": "1939-12-20T18:53:06.455Z",
+        "roomsNumber": 9
+      },
+      {
+        "address": "95 Richmond Street, Ladera, Indonesia",
+        "price": 86995,
+        "constructionYear": "2008-03-05T06:15:08.442Z",
+        "roomsNumber": 4
+      }
+    ]
+  }
+]
